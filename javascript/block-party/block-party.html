@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript Puzzler - Block Party!</title>
+		<script>
+			// global var
+			var name = "World!";
+			
+			(function(){
+				if (typeof name === "undefined") {
+					// local "shadow" var
+					var name = "Mr. Bond.";
+					alert("Hello, " + name);
+				} else {
+					alert("Hello, " + name);
+				}
+			})();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript Puzzler - Let's Print Some ZIP-Codes!</title>
+		<script>
+			// array of 5 valid zip-codes
+			var zipCodes = new Array("93021", "02392", "20341", "08163", "32959");
+			
+			// let's do something with each zip-code
+			// for now, print them out
+			for (i = 0; i < zipCodes.length; i++) {
+
+				// sanity check
+				if (!isNaN(parseInt(zipCodes[i])) && parseInt(zipCodes[i]) > 0) {
+					alert(parseInt(zipCodes[i]));
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

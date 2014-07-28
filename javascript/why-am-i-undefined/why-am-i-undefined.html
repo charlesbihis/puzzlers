@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript Puzzler - Mistaken Identity!</title>
+		<script>
+			function createPerson(personName) {
+				return
+				{
+					name : personName
+				};
+			}
+			
+			var person = createPerson('Charles');
+			if (typeof person === 'object') {
+				alert(person.name);
+			} else {
+				alert(typeof person);
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
+
+<!-- 
+http://dodgybits.org/2010/01/20/actionscript-puzzlers-answers/
+look at "mixed up"
+-->
